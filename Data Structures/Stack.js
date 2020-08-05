@@ -30,6 +30,7 @@ class Stack {
     const oldHead = this.head;
     this.head = oldHead.next;
     oldHead.next = null;
+    this.length--;
     return oldHead;
   }
 }
